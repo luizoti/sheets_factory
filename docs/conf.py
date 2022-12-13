@@ -8,8 +8,8 @@
 # serve to show the default.
 
 import os
-import sys
 import shutil
+import sys
 
 # -- Path setup --------------------------------------------------------------
 
@@ -148,7 +148,6 @@ pygments_style = "sphinx"
 # If this is True, todo emits a warning for each TODO entries. The default is False.
 todo_emit_warnings = True
 
-
 # -- Options for HTML output -------------------------------------------------
 
 # The theme to use for HTML and HTML Help pages.  See the documentation for
@@ -160,7 +159,7 @@ html_theme = "alabaster"
 # documentation.
 html_theme_options = {
     "sidebar_width": "300px",
-    "page_width": "1200px"
+    "page_width":    "1200px"
 }
 
 # Add any paths that contain custom themes here, relative to this directory.
@@ -231,7 +230,6 @@ html_static_path = ["_static"]
 # Output file base name for HTML help builder.
 htmlhelp_basename = "sheets_factory-doc"
 
-
 # -- Options for LaTeX output ------------------------------------------------
 
 latex_elements = {
@@ -272,13 +270,13 @@ latex_documents = [
 # -- External mapping --------------------------------------------------------
 python_version = ".".join(map(str, sys.version_info[0:2]))
 intersphinx_mapping = {
-    "sphinx": ("https://www.sphinx-doc.org/en/master", None),
-    "python": ("https://docs.python.org/" + python_version, None),
+    "sphinx":     ("https://www.sphinx-doc.org/en/master", None),
+    "python":     ("https://docs.python.org/" + python_version, None),
     "matplotlib": ("https://matplotlib.org", None),
-    "numpy": ("https://numpy.org/doc/stable", None),
-    "sklearn": ("https://scikit-learn.org/stable", None),
-    "pandas": ("https://pandas.pydata.org/pandas-docs/stable", None),
-    "scipy": ("https://docs.scipy.org/doc/scipy/reference", None),
+    "numpy":      ("https://numpy.org/doc/stable", None),
+    "sklearn":    ("https://scikit-learn.org/stable", None),
+    "pandas":     ("https://pandas.pydata.org/pandas-docs/stable", None),
+    "scipy":      ("https://docs.scipy.org/doc/scipy/reference", None),
     "setuptools": ("https://setuptools.pypa.io/en/stable/", None),
     "pyscaffold": ("https://pyscaffold.org/en/stable", None),
 }

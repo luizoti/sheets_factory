@@ -1,0 +1,8 @@
+pylint
+black
+autopep8
+
+pandas
+openpyxl
+pyexcelerate
+memory_profiler
