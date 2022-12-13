@@ -23,7 +23,7 @@ class SheetsFactory:
 
     def pandas(self, file_name=None, rows_data=None):
         """Generate a .xlsx with pandas."""
-        print("Running pandas solution.")
+        # print("Running pandas solution.")
         if file_name:
             self.file_name = file_name
         file_name = self.build_file_path_name()
@@ -38,7 +38,7 @@ class SheetsFactory:
 
     def pyexcelerate(self, file_name=None, rows_data=None):
         """Generate a .xlsx with pyexcelerate."""
-        print("Running pyexcelerate solution.")
+        # print("Running pyexcelerate solution.")
         if file_name:
             file_name = self.build_file_path_name()
         if not rows_data:
@@ -52,7 +52,7 @@ class SheetsFactory:
         for index, chunk in enumerate(
                 [self.sheet_data[x:x + size_of_chunk] for x in range(0, len(self.sheet_data), size_of_chunk)]):
             file_path = self.build_file_path_name(index=index)
-            print(f"Criando: {file_path}")
+            # print(f"Criando: {file_path}")
 
             if pandas:
                 self.pandas(file_name=file_path, rows_data=chunk)
